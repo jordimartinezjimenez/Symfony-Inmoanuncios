@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de anuncios{% endblock %}
+{% block body %}
+        <h1>Listado de anuncios</h1>
+                  {% for anuncio in anuncios %}
+                      <ul>
+                          <li>{{ anuncio.id }}</li>
+                      </ul>
+                  {% else %}
+                      <ul>
+                          <li>No hay anuncios.</li>
+                      </ul>
+                  {% endfor %}
+{% endblock %}

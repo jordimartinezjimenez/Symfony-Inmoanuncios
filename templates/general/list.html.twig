@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de usuarios generales{% endblock %}
+{% block body %}
+        <h1>Listado de usuarios generales</h1>
+                  {% for general in generals %}
+                      <ul>
+                          <li>{{ general.id }}</li>
+                      </ul>
+                  {% else %}
+                      <ul>
+                          <li>No hay usuarios generales.</li>
+                      </ul>
+                  {% endfor %}
+{% endblock %}

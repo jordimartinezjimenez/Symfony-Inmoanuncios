@@ -6,13 +6,20 @@ use App\Repository\ProvinciaRepository;
 
 class Provincia
 {
-    private $id;
+    public $id;
 
-    private $nombre;
+    public $nombre;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function setId(int $id): self
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
     public function getNombre(): ?string

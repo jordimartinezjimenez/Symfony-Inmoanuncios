@@ -6,11 +6,11 @@ use App\Repository\UsuariosRepository;
 
 class Usuarios
 {
-    private $id;
+    public $id;
 
-    private $nickname;
+    public $nickname;
 
-    private $password;
+    public $password;
 
     public function getId(): ?int
     {

@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de provincias{% endblock %}
+{% block body %}
+        <h1>Listado de provincias</h1>
+                  {% for provincia in provincias %}
+                      <ul>
+                          <li>{{ provincia.id }} | {{ provincia.nombre }}</li>
+                      </ul>
+                  {% else %}
+                      <ul>
+                          <li>No hay provincias.</li>
+                      </ul>
+                  {% endfor %}
+{% endblock %}
